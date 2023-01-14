@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Tasty food</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="tasty food/logo.png" alt=""></a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">what's new</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+
+                <h2>It's not a just coffee <br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam eligendi veniam veritatis et voluptates, eaque quia nemo quae amet, modi excepturi dolores? Tempore tenetur odio eius voluptatem? Architecto, libero a. lo</p>
+                <a href="https://www.starbucks.in/about-us" target="_blank">Learn more</a>
+            </div>
+            <div class="imgbox ">
+                <img src="tasty food/img1.png " alt=" ">
+            </div>
+        </div>
+
+        <ul class="thumb ">
+            <li><img src="tasty food/thumb1.png " onclick="imgslider('img1.png')"></li>
+            <li><img src="tasty food/thumb2.png " onclick="imgslider('img2.png')"></li>
+            <li><img src="tasty food/thumb3.png " onclick="imgslider('img3.png')"></li>
+        </ul>
+        <ul class="sci ">
+            <li>
+                <a href="# "><img src="/tasty food/tasty food/facebook.png "></a>
+                <a href="# "><img src="/tasty food/tasty food/instagram.png "></a>
+                <a href="# "><img src="/tasty food/tasty food/twitter.png "></a>
+            </li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgslider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+    </script>
+
+</body>
+
+</html>

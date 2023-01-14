@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login and Registration form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+<div class="hero">
+    <div class="form-box">
+    <div class="button-box">
+    <div id="btn"></div>
+    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+
+</div>
+        <div class="social-icons">
+            <a href="http://"><i class="fab fa-facebook"></i></a>
+            <a href="http://"><i class="fab fa-twitter"></i></a>
+            <a href="http://"><i class="fab fa-google"></i></a>
+        </div>
+        <form id="login" class="input-group">
+            <input type="email" class="input-field" placeholder="Email Id" required id="input-email" autocomplete="off">
+            <input type="text" id="User" name="User Name" placeholder="User Name"  autocomplete="off" id="input-tel">
+            <input type="Password" class="input-field" placeholder="Enter Password" required id="input-password">
+            <div class="forget"><a href="#"><span>Forget Password ?</span></a></div>
+            <button type="submit" class="submit-btn" onclick="call();">Log In</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="text" id="User" name="User Name" placeholder="User Name" required autocomplete="off">
+            <input type="Password" class="input-field" placeholder="Enter Password" required>
+            <input type="Password" class="input-field" placeholder="Confirm Password" required style="margin-top: 20px">
+            <input type="checkbox" class="chech-box"><a href="#"><span>I agree to the term & conditions</span></a>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+</div>
+<script>
+    var x=document.getElementById("login");
+    var y=document.getElementById("register");
+    var z=document.getElementById("btn");
+    function register() {
+        x.style.left="-400px"
+        y.style.left="50px"
+        z.style.left="110px"
+    }
+    function login() {
+        x.style.left="50px"
+        y.style.left="450px"
+        z.style.left="0"
+    }
+    function call() {
+        // console.log(document.getElementById('login').value);
+        alert('you have been logged in successfully.');
+    }
+</script>
+</body>
+</html>
